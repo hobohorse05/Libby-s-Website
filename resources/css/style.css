@@ -1,0 +1,96 @@
+/*Video banner with title (Top section)
+*/
+
+header{
+  height:750px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  background-image: url("https://ziteboard.zendesk.com/hc/en-us/article_attachments/205619309/Ziteboard_whiteboard_math_tutoring.png");
+}
+
+header .img-banner{
+  background-color: black;
+  opacity: 0.8;
+  height: 15%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-banner .txt-banner{
+  font-family: helvetica;
+  font-size: 100px;
+  color: #7BC6E9;
+  opacity: 1;
+}
+
+/*Navigation area + footer*/
+
+
+nav{
+  height: 300px;
+  background-color: white;
+  display: flex;
+  border-top: 10px solid gray;
+}
+
+.container-buffer, .container-content{
+  padding-top: 20px;
+}
+
+.container-buffer{
+  flex: 3;
+  background-color: white;
+}
+
+nav a{
+  display: flex;
+  flex: 5;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-content{
+  flex: 5;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-content .container-heading{
+  font-family: helvetica;
+  font-size: 40px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content .container-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  width: 100%;
+}
+
+.container-content .container-desc{
+  flex: 2;
+  width: 100%;
+}
+
+.container-desc span{
+  padding: 10px 30px;
+}
+
+.container-content:hover{
+  background-color: #98D7F4;
+  transition: background-color 350ms ease-in-out 0s;
+}
+
+.container-content:not(:hover){
+  background-color: white;
+  transition: background-color 350ms ease-in-out 0s;
+}

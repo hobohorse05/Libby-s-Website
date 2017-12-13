@@ -4,9 +4,71 @@
     <meta charset="utf-8">
     <title>TEST</title>
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/21b696e708.js"></script>
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
+    <!--Image and title area-->
+
+    <header>
+      <div class="img-banner">
+        <div class="txt-banner">
+          TITLE
+        </div>
+      </div>
+    </header>
+
+    <!--Navigation area-->
+
+    <nav>
+      <div class="container-buffer"></div>
+      <a href="#">
+        <div class="container-content">
+          <span class="container-heading">About Me</span>
+          <span class="container-img"><i class="fa fa-question fa-5x" aria-hidden="true"></i></span>
+          <span class="container-desc"><span>FIIILLLLLLLLLLLLLLLLLL</span></span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container-content">
+          <span class="container-heading">Subjects</span>
+          <span class="container-img"><i class="fa fa-book fa-5x" aria-hidden="true"></i></span>
+          <span class="container-desc"><span>FIIILLLLLLLLLLLLLLLLLL</span></span>
+        </div>
+      </a>
+      <a href="#">
+        <div class="container-content">
+          <span class="container-heading">Contact Me</span>
+          <span class="container-img"><i class="fa fa-phone fa-5x" aria-hidden="true"></i></span>
+          <span class="container-desc"><span>FIIILLLLLLLLLLLLLLLLLL</span></span>
+        </div>
+      </a>
+      <div class="container-buffer"></div>
+    </nav>
   </body>
+
+  <script>
+
+  //Image scroll
+
+  (function(){
+
+  var parallax = document.querySelectorAll("header"),
+      speed = 0.5;
+
+  window.onscroll = function(){
+    [].slice.call(parallax).forEach(function(el,i){
+
+      var windowYOffset = window.pageYOffset,
+          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+      el.style.backgroundPosition = elBackgrounPos;
+
+    });
+  };
+
+})();
+
+  </script>
 </html>
